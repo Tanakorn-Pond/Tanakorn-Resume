@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.layout{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    gap: 10px;
+}
+
+.layout-1{
+    width: 25%;
+    border: solid 1px black;
+}
+
+.layout-2{
+    width: 75%;
+    border: solid 1px black;
+    padding: 20px;
+}
+
+.layout-1 h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.layout-1-1{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.picture{
+    background: url(./images/photo-resume.JPG);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    height: 200px;
+    width: 150px;
+}
+
+.thai{
+    font-size: 20px;
+}
+
+.layout-1-2{
+    display: flex;
+    justify-content: center;
+}
+
+.layout-1 ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.layout-1 li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 40px;
+}
+
+.icon-email{
+    background: url(https://img.icons8.com/ios/50/new-post.png);
+    background-position: center;
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+}
+
+.icon-phone{
+    background: url(https://img.icons8.com/ios/50/phone--v1.png);
+    background-position: center;
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+}
+
+.icon-github{
+    background: url(https://img.icons8.com/ios-glyphs/50/github.png);
+    background-position: center;
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+}
+
+.icon-python{
+    background: url(https://img.icons8.com/color/50/python.png);
+    background-position: center;
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+}
+
+.icon-Csharp{
+    background: url(https://img.icons8.com/nolan/64/c-sharp-logo.png);
+    background-position: center;
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+}
+
+.icon-SQL{
+    background: url(https://img.icons8.com/fluency/50/sql.png);
+    background-position: center;
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+}
+
+.icon-HTML{
+    background: url(https://img.icons8.com/color/48/html-5--v1.png);
+    background-position: center;
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+}
+
+.icon-CSS{
+    background: url(https://img.icons8.com/color/48/css3.png);
+    background-position: center;
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+}
+
+.icon-javascript{
+    background: url(https://img.icons8.com/color/48/javascript--v1.png);
+    background-position: center;
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+}
+
+.icon-typecript{
+    background: url(https://img.icons8.com/color/48/typescript.png);
+    background-position: center;
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+}
+
+.icon-VS{
+    background: url(https://img.icons8.com/fluency/48/visual-studio.png);
+    background-position: center;
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+}
+
+.icon-VScode{
+    background: url(https://img.icons8.com/color/48/visual-studio-code-2019.png);
+    background-position: center;
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+}
+
+.layout-2 ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 40px;
+}
+
+.layout-2 h3{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+.layout-2 ul li{
+    display: flex;
+    align-items: start;
+    gap: 5px;
+    height: 100%;
+
+    p{
+        width: 15%;
+    }
+
+    span{
+        width: 85%;
+    }
+}
