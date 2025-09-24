@@ -3,6 +3,14 @@
     padding: 0;
 }
 
+body{
+    background-color: black;
+    color: #fff;
+    max-width: 1300px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
 main{
     padding-top: 20px;
     padding-bottom: 20px;
@@ -10,22 +18,36 @@ main{
     padding-right: 100px;
 }
 
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
 .layout{
     width: 100%;
     height: 100vh;
-    display: flex;
-    gap: 10px;
+    display: grid;
+    gap: 5%;
 }
 
 .layout-1{
-    width: 25%;
-    border: solid 1px black;
+    width: 20%;
+    padding: 20px;
+    border: solid 1px #1f2937;
+    border-radius: 16px;
+    background-color: #12161b;
 }
 
 .layout-2{
     width: 75%;
-    border: solid 1px black;
+    border: solid 1px #1f2937;
     padding: 20px;
+    border-radius: 16px;
+    background-color: #12161b;
+}
+
+.name{
+    text-align: center;
 }
 
 .layout-1 h3{
@@ -71,8 +93,13 @@ main{
     padding-left: 40px;
 }
 
+h3{
+    color: #7dd3fc;
+}
+
+/* === icons เดิมขอคงไว้ === */
 .icon-email{
-    background: url(https://img.icons8.com/ios/50/new-post.png);
+    background: url(https://img.icons8.com/fluency/48/filled-message.png);
     background-position: center;
     background-size: cover;
     height: 20px;
@@ -80,15 +107,7 @@ main{
 }
 
 .icon-phone{
-    background: url(https://img.icons8.com/ios/50/phone--v1.png);
-    background-position: center;
-    background-size: cover;
-    height: 20px;
-    width: 20px;
-}
-
-.icon-github{
-    background: url(https://img.icons8.com/ios-glyphs/50/github.png);
+    background: url(https://img.icons8.com/ios-filled/50/FAB005/phone.png);
     background-position: center;
     background-size: cover;
     height: 20px;
@@ -180,7 +199,7 @@ main{
     margin-left: 20px;
 }
 
-.layout-2 ul li{
+.layout2-1 ul li{
     display: flex;
     align-items: start;
     gap: 5px;
@@ -193,4 +212,61 @@ main{
     span{
         width: 85%;
     }
+}
+
+.layout2-2 ul li{
+    display: flex;
+    align-items: start;
+    gap: 5px;
+    height: 100%;
+
+    p{
+        width: 30%;
+    }
+
+    span{
+        width: 70%;
+    }
+}
+
+.Profile-detail{
+    padding-left: 40px;
+}
+
+.line{
+    height: 1px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #1f2937;
+}
+
+/* ===== Responsive proportions ===== */
+
+.layout-1, .layout-2{
+  width: 100%;                  
+  display: flex;
+  flex-direction: column;
+}
+
+/* Tablet ขึ้นไป: 35% / 65% */
+@media (min-width: 768px){
+  .layout{
+    grid-template-columns: 0.35fr 0.65fr;
+  }
+  main{
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+/* Desktop ขึ้นไป: 30% / 70% */
+@media (min-width: 1024px){
+  .layout{
+    grid-template-columns: 0.30fr 0.70fr;
+  }
+  main{
+    padding-left: 80px;
+    padding-right: 80px;
+  }
 }
